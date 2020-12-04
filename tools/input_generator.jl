@@ -1,4 +1,4 @@
-function GetInput(path)::Array{Int}
+function GetInput(path, asInt)::Array
     inputArray = []
 
     open(path) do file
@@ -7,7 +7,11 @@ function GetInput(path)::Array{Int}
         end
     end
 
-    return parseAsInt.(inputArray)
+    if (asInt)
+        return parseAsInt.(inputArray)
+    end
+
+    return inputArray
 end
 
 function parseAsInt(input)::Int
