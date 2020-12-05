@@ -1,6 +1,6 @@
 include("../tools/input_generator.jl")
 
-input = GetInput("./input.txt")
+input = GetInputAsInt("./input.txt")
 
 global numberFound = false
 global numbersTuple

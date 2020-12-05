@@ -1,8 +1,8 @@
 include("../tools/input_generator.jl")
 
-global policies = GetInput("./input.txt", false)
+global policies = GetInputAsInt("./input.txt")
 global charLimitRegex = r"(?<min>\d*)-(?<max>\d*)"
-global charToLimitRegex = r"\s(?<char>\w+):";
+global charToLimitRegex = r"\s(?<char>\w+):"
 
 function main()
     validPasswords = 0
