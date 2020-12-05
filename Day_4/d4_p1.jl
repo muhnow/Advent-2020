@@ -31,6 +31,7 @@ function main()
     end
 
     determinePassportValidity()
+    println(validPassports)
     # determine if the very last passport data stream is valid 
 end   
 
